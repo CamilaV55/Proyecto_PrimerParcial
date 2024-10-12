@@ -199,7 +199,7 @@ text-decoration: none;
 .categoria {
     text-align: center;
     max-width: 300px;
-    background-color: #fafaf8d8;
+    background-color: rgba(249, 244, 244, 0.916);
     padding: 20px;
     border-radius: 0px;
     box-shadow: 0 0 10px rgba(241, 239, 239, 0.1);
@@ -226,7 +226,7 @@ text-decoration: none;
 
 .categoria a {
     display: inline-block;
-    background-color: #f7f4f4;
+    background-color: #dc2424;
     color: #fff;
     text-decoration: none;
     padding: 8px 16px;
@@ -246,3 +246,218 @@ text-decoration: none;
     box-shadow: 0 0 15px rgba(234, 230, 230, 0.927);
 }
 
+footer {
+    background-color: #900f06; /* Brown color */
+    color: white;
+    text-align: center;
+}
+
+.footer-top, .footer-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+}
+
+.footer-top {
+    background-color: #af0707; 
+}
+
+.footer-top a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-bottom {
+    background-color:#8f140b;
+    padding: 25px 0;
+}
+
+.footer-bottom a {
+    color: rgb(238, 235, 235);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-top a:hover, .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    position: relative;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+}
+
+.left p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+}
+
+.right {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product p {
+    text-align: center;
+    margin: 10px 0 0;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.product img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.left img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.categoria a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #edece5ef;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color  0.3s ease;
+}
+.categoria a:hover{
+    background-color:#edece5ef;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-center,
+    .navbar-left,
+    .navbar-right {
+        margin: 10px 0;
+        justify-content: center;
+        text-align: center;
+        margin-left: 200px;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+  
+    .navbar-toggle,
+    .navbar-search {
+        margin: 10px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+    .navbar-brand {
+        font-weight: bold;
+        color: #0a0a0a;
+        text-decoration: none;
+        font-family: g;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-left: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-center,
+    .navbar-left,
+    .navbar-right {
+        margin: 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar-right {
+        margin-left: auto;
+    }
+
+    .navbar-toggle,
+    .navbar-search {
+        margin: 10px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+    .navbar-brand {
+        font-weight: bold;
+        color: #0a0a0a;
+        text-decoration: none;
+        font-family: g;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-left: 50%;
+    }
+}
