@@ -243,7 +243,7 @@ text-decoration: none;
 }
 .categoria img:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(234, 230, 230, 0.927);
+    box-shadow: 0 0 15px rgba(202, 56, 56, 0.927);
 }
 
 footer {
@@ -271,7 +271,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color:#8f140b;
+    background-color:#f2eded;
     padding: 25px 0;
 }
 
